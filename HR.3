@@ -1,0 +1,13 @@
+package hackerrank;
+import java.util.Scanner;
+public class three {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int k = sc.nextInt();
+        int total = n * 2;
+        int replay = (k > total) ? (k - total) : (total - k);
+        if (replay == 0) replay = 1;
+        System.out.println("The minimum count of n levels is " + replay);
+    }
+}
