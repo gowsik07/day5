@@ -1,0 +1,19 @@
+package day5;
+	import java.util.Scanner;
+	public class palindrome {
+		public static void main(String[] args) {
+			Scanner sc=new Scanner(System.in);
+			int a=sc.nextInt();
+			int num=a;
+			int s=0;
+			while(a!=0) {
+				int t=a%10;
+				s=s*10+t;
+				a=a/10;
+			}if(num==s) {System.out.println("Palindrome");}
+			else {
+				System.out.println("NOT Palindrome");
+			}
+		}
+	}
+
